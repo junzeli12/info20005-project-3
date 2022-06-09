@@ -1,50 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/check out 4.css">
+    <link rel="stylesheet" href="css/check out page.css">
 </head>
 <body>
- <!----the header comment and using is same with home page--->
+
 <div class="container">
     <div class="header">
         <div class="logo">
-            <a name="logo" href="index.html"><img src="picture/logo.png" alt="logo"></a>
+            <a name="logo"><img src="picture/logo.png" alt="logo" width="200" height="140"></a>
         </div>
-        <input type="checkbox" id="togglebox" />
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Furniture</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Login<img src="" alt=""></a></li>
         </ul>
-        <label class="menu" for="togglebox"><img src="picture/put1.png"/></label>
         <div class="btn">
-            <input type="text">
-            <a href="search page.html"><img src="picture/search button.png" alt="search"></a>
-            <a href="cart.html"><img src="picture/shopping carts.png" alt="shopping cart"></a>
+            <a href="#"><img src="picture/search button.png" alt="search"></a>
+            <a href="#"><img src="picture/shopping carts.png" alt="shopping cart"></a>
         </div>
     </div>
- 
     <div class="content">
-            <!---- the left successed pay it would appear--->
+    
             <div class="left">
-                <div class="logo"><a href="#"><img src="picture/logo1.png" width="200px" height="100px"></a></div>
-                <h2>check out</h2>
+               <div class="logo"><a href="#"><img src="picture/logo1.png" width="200px" height="100px"></a></div>
+                <h1>check out</h1>
                 <div class="follow">
-                    <span style="background-color: green; color: aliceblue;">1</span><hr><span style="background-color: green; color:aliceblue;">2</span><hr><span style="background-color: green; color:aliceblue;">3</span>
+                    <span>1</span><hr><span>2</span><hr><span>3</span>
                 </div>
-                <div class="top">
-                   <div class="successed">
-                      <div class="img"><img src="picture/right1.png" alt=""></div><p>You payment has been finished, thank you</p>
-                   </div>
-                   <!----make it locate in the center--->
-                    <center><button id="back to home" onclick="location.href='index.html'">back</button></center>
+                
+                <div class="register">
+    
+                    <form>
+                        <p>first name:<input type="text" placeholder="first name"></p>
+                    
+                    
+                        <p>last name:<input type="text" placeholder="last name"></p>
+                        
+                    
+                    
+                        <p>address:<input type="text" placeholder="address"></p>
+                        
+                    
+                    
+                        <p>town city:<input type="text" placeholder="cityname" style="width:150"></p>
+                       
+                    
+                        <p>postcode:<input type="text" placeholder="postcode"></p>
+                        
+                    
+                        <p>email:<input type="text" placeholder="email"></p>
+                        
+                   
+                        <p>mobile phone:<input type="text" placeholder="phone"></p>
+                        <p><input type="checkbox" id="check"/> <span>I have read and accepted  agreement. *</span></p>
+                        <button id="back">back</button><button id="next">next</button>
+                       
+                    </form>
                 </div>
+
             </div>
-             <!----right would be the product detail--->
             <div class="right">
                 <P><img src="picture/cart1.png" alt="" width="100px" height="50px" vertical-align="middle">
                     <span>$399.00</span>
@@ -60,8 +77,10 @@
             
 
      
-    </div>    
-   <!----the footer comment is same with homepage--->
+    </div>
+        
+    
+  
     <div class="footer">
         <div class="top">
             <div class="one" style="float:left;">
