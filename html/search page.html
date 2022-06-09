@@ -1,71 +1,66 @@
 <!DOCTYPE html>
 <html>
-		<!----the header comment and using is same with home page--->
+	<!----the header comment and using is same with home page--->
 	<head>
 		<meta charset="utf-8">
 		<title></title>
 		<link rel="stylesheet" href="./css/common.css">
-		<link rel="stylesheet" href="./css/category.css">
+		<link rel="stylesheet" href="./css/search page.css">
 		<script src="./js/category.js"></script>
 	</head>
 	<body>
 	<div class="container">
 		<div class="header">
 			<div class="logo">
-				<a name="logo" href="index.html"><img src="picture/logo.png" alt="logo"></a>
+				<a name="logo"><img src="picture/logo.png" alt="logo"></a>
 			</div>
 			<input type="checkbox" id="togglebox" />
 			<ul>
-				<li><a href="index.html" >Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="#">Furniture</a></li>
 				<li><a href="#">Contact</a></li>
 				<li><a href="#">Login<img src="" alt=""></a></li>
 			</ul>
 			<label class="menu" for="togglebox"><img src="picture/put1.png"/></label>
-			<div class="btn" id="btn">
-				<input type="text">
-				<a href="./search page.html"><img src="picture/search button.png" alt="search"></a>
-				<a href="./cart.html"><img src="picture/shopping carts.png" alt="shopping cart"></a><span id="toggle1"></span>
+			<div class="btn">
+				<a href="#"><img src="picture/shopping carts.png" alt="shopping cart"></a>
 			</div>
 		</div>
-		<!----the top one is to introduce the specific room, like bedroom information--->
 		<div class="content">
-			<div class="one">   
-				<!----the left picture of bedroom--->
-				<div class="left">
-					<a href="#"><img src="picture/li1.png" alt="bedroom"></a>
-				</div>
-				<!----the right introduction--->
-				<div class="right">
-					<h1>Bedroom</h1>
-					<p>As experts in sleeping culture we pride ourselves on our selection of bedroom furniture and sleeping essentials.	Choosing the correct bed, bedroom furniture,  mattress and bedding so that you
-						can benefit from a good night sleep every night is a great investment you can make for you and your family. Our bedroom furniture collection boasts true Scandinavian design and will offer something for every budget. </p>
-				</div>
-            </div>
-			<!----user can choose the price product and brand in the left list--->
+				<!----the search background content--->
+		   <div class="search">
+               <div class="back"><img src="picture/search2.png" alt=""></div>
+               <h1>Search</h1>
+               <div class="bar">
+                  <div class="text"><input type="text"></div>
+                  <div class="btn"><a href="#"><img src="picture/search button.png" alt=""></a></div>
+               </div>
+               <p>you may want search : queenbed,  king bed</p>
+           </div>
+		   <!----same with category bottom--->
 		   <div class="list">
 				<div class="zuo">
-                    <ul id="filter">
+					<ul>
 						<li><a href="javascript:;" id="toggle">Price</a>
 							<ul>
-									<li><a href="#">Under $1000</a><input type="checkbox" title="show" name="check"></li>
-									<li><a href="#">$1000 -$5000</a><input type="checkbox" name="check"></li>
-									<li><a href="#">$5000 -$20000</a><input type="checkbox" name="check"></li>
-									<li><a href="#">Above $20000</a><input type="checkbox" name="check"></li>
+									<li><a href="#">Under $1000</a><input type="checkbox"></li>
+									<li><a href="#">$1000 -$5000</a><input type="checkbox"></li>
+									<li><a href="#">$5000 -$20000</a><input type="checkbox"></li>
+									<li><a href="#">Above $20000</a><input type="checkbox"></li>
 							</ul>
-      					</li>						
+						</li>						
 						<li><a href="javascript:;">Category</a></li>
 						<li><a href="javascript:;">Brand</a></li>
 						<li><a href="javascript:;">In stock option</a></li>
 					</ul>
 				</div>
-				<!----the list of product--->
-				<div class="you" >
-						<div class="picture" id="picture">
+				<!----the content is smae with category--->
+				<div class="you">
+						<div class="picture">
 							<ul>
 								<li>
-									<a href="./product 2.html"><img src="picture/jun1.png" alt="" style="border:0"></a><button><strong>+</strong></button>
-									<p>Dolante Queen Upholstered Bed</p><p><strong>$500</strong></p>
+									<img src="picture/jun1.png" alt=""><button><strong>+</strong></button>
+									<p>Dolante Queen Upholstered Bed</p><p><strong>$5000</strong></p>
 								</li>
 								<li><img src="picture/jun2.png" alt=""><button><strong>+</strong></button><p>
 									Paxberry Bedroom Mirror</p><p><strong>$89.9</strong></p>
@@ -76,7 +71,7 @@
 								<li><img src="picture/jun4.png" alt=""><button><strong>+</strong></button><p>
 									Adelloni Queen Upholstered Bed</p><p><strong>$399.99</strong></p>
 								</li>
-								<li><a href="./product.html"><img src="picture/jun5.png" alt="" style="border:0"></a><button><strong>+</strong></button><p>
+								<li><img src="picture/jun5.png" alt=""><button><strong>+</strong></button><p>
 									Senniberg Dresser and Mirror</p><p><strong>$399.99</strong></p>
 								</li>
 								<li><img src="picture/jun6.png" alt=""><button><strong>+</strong></button><p>
@@ -85,30 +80,29 @@
 							</ul>
 						</div>
 				</div>
+		</div>
+		<!----page number--->
+		<div class="page">
+			<ul>
+				<li>
+					<a href="javascript:;">1</a>
+				</li>
 			
-	        </div>
-	<!----user can see different page which can be click to see more products--->
-			<div class="page">
-				<ul>
-					<li>
-						<a href="javascript:;">1</a>
-					</li>
-				
-					<li>
-						<a href="javascript:;">2</a>
-					</li>
-					<li>
-						<a href="javascript:;">3</a>
-					</li>
-					<li>
-						<a href="javascript:;">4</a>
-					</li>
-					<li>
-						<a href="javascript:;">&gt;</a>
-					</li>
-				</ul>
-			</div>		
-	    </div>
+				<li>
+					<a href="javascript:;">2</a>
+				</li>
+				<li>
+					<a href="javascript:;">3</a>
+				</li>
+				<li>
+					<a href="javascript:;">4</a>
+				</li>
+				<li>
+					<a href="javascript:;">&gt;</a>
+				</li>
+			</ul>
+		</div>		
+		</div>
 		<!----the footer comment is same with homepage--->
 		<div class="footer">
 			<div class="top">
