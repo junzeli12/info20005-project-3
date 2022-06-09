@@ -1,0 +1,350 @@
+.content{
+	overflow:hidden;
+    padding-top:50px;
+   
+}
+
+.content .search{
+    position: relative;
+    width:80%;
+    margin:auto;
+     height:500px;
+    color:white;
+}
+.content .search h1{
+    padding-top:50px;
+    text-align: center;
+    font-size:3.5em;
+}
+.content .search .bar{
+    position:absolute;
+    width:700px;
+    height: 108px;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    margin-left: -300px;
+    margin-top: 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.content .search .bar .text{
+    width: 304px;
+    height:104px;
+}
+.content .search .bar .btn{
+    width: 104px;
+    height:108px;
+    border:0;
+}
+.content .search .bar input{
+    width: 500px;
+    height: 90px;
+    border-radius:50px;
+    border:0;
+    font-size:2em;
+    padding-left:2em;
+}
+.content .search .bar a img{
+    width: 100px;
+    height: 100px;
+    background:black;
+    border:0;
+    
+}
+.content .search .back{
+    width:500px;
+    z-index: 1;
+    position: absolute;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    margin-left: -400px;
+    margin-top: -225px;
+
+}
+.content .back img{
+    width:800px;
+    height: 450px;
+    opacity: 0.3;
+
+}
+.content .search p{
+    position:absolute;
+    bottom:100px;
+    left:280px;
+    font-size:0.8em;
+ 
+}
+.content .list{
+	width: 100%;
+	/* height: 1000px; */
+	background-color: white;
+	clear:both;
+	/* padding:10px 80px; */
+	display: flex;
+	justify-content: center;
+	/* padding-top: 150px; */
+	box-sizing: border-box;
+}
+.content .list .zuo{
+	width:20%;
+	height:40%;
+	/* border-right: 1px solid black; */
+	/* box-sizing: border-box; */
+}
+ .content .list .zuo>ul{
+	 float:none;
+	 width:100%;
+	 border-right:1px solid black;
+	 padding:50px 0;
+	 /* border:1px solid blue; */
+ }
+ .content .list .zuo ul input{
+	 text-align: right;
+	 width:30px;
+	 height:30px;
+	margin-left:20px;
+	/* margin-top:25px; */
+	vertical-align: middle;
+ }
+ .content .list .zuo ul li ul{
+	/* border:1px solid red; */
+	margin-left:0;
+	padding-left:0;
+ 	display:none;
+	 width:100%;
+	 list-style:none inside;
+ }
+ .content .list .zuo>ul>li{
+	 width:100%;
+	 border-bottom:2px solid #aaa;
+	 /* box-shadow:1px 1px  gray; */
+	 line-height:80px;
+ }
+ .content .list .zuo>ul ul li{
+	 line-height:50px;
+	 height:50px;
+ }
+ .content .list .zuo ul li ul li a{
+	 /* display:inline-block; */
+	 width:100%;
+	 height:30px;
+ }
+.content .list .you{
+	width:80%;
+	/* flex: 1; */
+	/* padding-left: 20px; */
+	/* height: 1000px; */
+}
+.content .list .you .picture>ul>li{
+	width: 33.3%;
+	height:100%;
+    /* display: inline-block; */
+	/* margin:0 50px; */
+	position: relative;
+	float:left;
+}
+.content .list .you .picture>ul>li>img{
+	width: 100%;
+	height: 300px;
+}
+.content .list .you .picture>ul>li button{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 20px;
+	height: 20px;
+}
+.content .list .you .picture>ul>li p{
+	text-align: center;
+}
+
+
+.content .page{
+	/*  */
+	padding-right: 20%;
+	overflow: hidden;
+	clear: both;
+	background:white;
+}
+
+.content .page ul{
+	margin-left: 50%;
+	margin-top: 1%;
+}
+ .content .page li{
+	text-align: right;
+    border: 1px solid black;
+    display:inline-block;
+	list-style: none;
+	margin:0.8em;
+
+} 
+.content .page li a{
+	padding: 15px;
+}
+
+@media (max-width:1316px) {
+	.content .one .right h1{
+		font-size: 1.8em;
+	}
+	.content .one .right p{
+		font-size: 0.9em;
+	}
+	.content .list{
+		font-size:0.9em;
+	}
+    
+}
+@media (max-width:1200px) {
+	.content .list .zuo ul input{
+		width:30px;
+		height:30px;
+		margin-left:5px;
+	}
+	.content .one .right h1{
+		font-size: 1.7em;
+	}
+	.content .one .right p{
+		font-size: 0.8em;
+	}
+	.content .list{
+		font-size:0.8em;
+	}
+	.content .page ul{
+		margin-left: 40%;
+		margin-top: 1%;
+	}
+	.content .page li{
+		margin:0.6em;
+	}
+	.content .list .you .picture>ul>li{
+		width: 50%;
+		height:80%;
+	}
+}
+@media (max-width:930px) {
+	.content .one .right h1{
+		font-size: 1.5em;
+	}
+	.content .one .right p{
+		font-size: 0.7em;
+	}
+	.content .list{
+		font-size:0.7em;
+	}
+	.content .page ul{
+		margin-left: 30%;
+		margin-top: 1%;
+	}
+	.content .page li{
+		margin:0.6em;
+	}
+	.content .list .you .picture>ul>li{
+		width: 50%;
+		height:70%;
+	}
+    .content .search{
+        position: relative;
+        width:80%;
+        margin:auto;
+         height:500px;
+        color:white;
+    }
+    .content .search h1{
+        padding-top:50px;
+        text-align: center;
+        font-size:2em;
+    }
+    .content .search .bar{
+        margin:auto;
+        position:absolute;
+        width:400px;
+        height: 70px;
+        left: auto;
+        top: 50%;
+        z-index: 2;
+        /* margin-left: -300px;
+        margin-top: 10px; */
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    .content .search .bar .text{
+        width: 200px;
+        height:70px;
+    }
+    .content .search .bar .btn{
+        width: 100px;
+        height:70px;
+        border:0;
+    }
+    .content .search .bar input{
+        width: 100%;
+        height: 90px;
+        border-radius:50px;
+        border:0;
+        font-size:2em;
+        padding-left:2em;
+    }
+    .content .search .bar a img{
+        width: 60px;
+        height: 60px;
+        background:black;
+        border:0;
+        
+    }
+    .content .search .back{
+        width:400px;
+        z-index: 1;
+        position: absolute;
+        height: 200px;
+        left: 50%;
+        top: 50%;
+        margin-left: -300px;
+        margin-top: -175px;
+    
+    }
+    .content .back img{
+        width:600px;
+        height: 350px;
+        opacity: 0.3;
+    
+    }
+    .content .search p{
+        position:absolute;
+        bottom:100px;
+        left:1%;
+        font-size:0.8em;
+     
+    }
+	
+}
+@media (max-width:840px) {
+	.content .one .right h1{
+		font-size: 1.3em;
+	}
+	.content .one .right p{
+		font-size: 0.6em;
+	}
+	.content .list{
+		font-size:0.5em;
+	}
+	.content .page ul{
+		margin-left: 30%;
+		margin-top: 1%;
+	}
+	.content .page li{
+		margin:0.5em;
+	}
+	.content .list .you .picture>ul>li{
+		height:60%;
+	}
+	.content .list .zuo ul input{
+		width:20px;
+		height:20px;
+		margin-left:5px;
+	}
+}

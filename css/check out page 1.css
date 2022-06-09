@@ -1,0 +1,164 @@
+.container .content{
+    overflow: hidden;
+    padding-bottom: 200px;
+    padding-top: 100px;
+}
+/*the left part layout*/
+.container .content .left{
+    width: 70%;
+    float: left;
+    color: white;
+    border-right: 1px solid white;
+}
+/*those three number layout*/
+.container .content .left h1{
+    text-align: center;
+    margin-top: 30px;
+}
+.container .content h2{
+    margin-top: 1em;
+    text-align: center;
+}
+
+.container .content .left .follow{
+        height:50px;
+        text-align:center;
+        margin: 50px;
+       }
+.container .content .left  .follow hr{
+        display:inline-block;
+        width:80px;
+        vertical-align: center;
+       }
+.container .content  .follow span{
+        
+        background:white;
+        color:black;
+        border-radius:50%;
+        padding:6px 15px;
+        font-size:1.5em;
+       }
+.container .content .left .logo{
+    width:200px;
+    height:100px;
+    margin:auto;
+}
+/*control the table register size and location*/
+.container .content .left .register{
+    width: 70%;
+    margin: auto;
+
+}
+.container .content .left .register p{
+    line-height: 50px;
+    font-size: 1.2em;
+}
+.container .content .left .register p input{
+    height: 35px;
+    margin-left: 20px;
+    margin-top:10px;
+    width: 70%;
+    border:0;
+    padding-left:1em;
+}
+/*the bottom line layout*/
+#check{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 60px;
+}
+#check~span{
+   font-size: 0.8em; 
+}
+.container .content .left .register input[type='button'],.container .content .left .register input[type='submit']{
+    margin-top: 50px;
+    padding:0.4em 1.5em;
+    background-color: yellow;
+    border-radius: 1em;
+    font-size:1.5em;
+}
+/*control the button at the bottom*/
+#back{
+    float: left;
+    background-color: white;
+}
+#next{
+     float: right;
+}
+/*the right layout of the product information*/
+.container .content .right{
+    float: left;
+    width: 20%;
+    color: aliceblue;
+    margin-left: 50px;
+}
+.container .content .right p{
+    line-height: 80px;
+}
+
+
+.container .content .right p strong{
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+ /*when the screen size become smaller in specific number, the picture and the font size would be relocate by using @media*/
+@media (max-width:1440px) {
+    strong{
+        font-size:1.1em;
+        padding-left: 8px;
+     }
+    .content p{
+        font-size:0.9em;
+    }
+}
+/*when the size is 1300px of width, change detail size*/
+@media (max-width:1300px) {
+    .content p{
+        font-size:0.8em;
+    }
+    strong{
+        padding-left: 6px;
+        font-size:1em;
+    }
+}
+/*when the size is 1200px of width, change detail size*/
+@media (max-width:1200px) {
+    .content p{
+        font-size:0.7em;
+    }
+    strong{
+        padding-left: 5px;
+        font-size:0.9em;
+    }
+    .container .content .left .register p{
+        line-height: 40px;
+        font-size: 1em;
+    }
+    .container .content .left .register button{
+        margin-top: 40px;
+        padding:0.3em 1.2em;
+        font-size:1.2em;
+    }
+
+}
+/*when the size is 920px of width, change detail size*/
+@media (max-width:920px) {
+    .content p{
+        font-size:0.6em;
+    }
+    strong{
+        padding-left: 4px;
+        font-size:0.8em;
+    }
+    .container .content .left .register p{
+        line-height: 35px;
+        font-size: 0.9em;
+    }
+    .container .content .left .register button{
+        margin-top: 30px;
+        padding:0.25em 1.1em;
+        font-size:1em;
+    }
+}
+

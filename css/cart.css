@@ -1,0 +1,188 @@
+
+.content{
+    padding-top:1% ;
+    padding-bottom:1.5%;
+    position: relative;
+}
+.content hr{
+    width: 80%;
+    margin:auto;
+    margin:70px auto ;
+}
+/*control product information layout*/
+.content .top{
+    width: 100%;
+    position: relative;
+    color: aliceblue;
+    overflow: hidden;
+    height:300px;
+    display: flex;
+    align-items:center;
+}    
+.content .top #circle{
+    margin-left:1.5em;
+    width: 30px;
+    height: 30px;
+    align-self: center;
+}
+.content .top .good{
+    flex:1;
+ 
+}
+.content .top .cancel{
+    position: absolute;
+    top: 0;
+    right: 7%;
+    background-color: black;
+    border: 0;
+}
+.content .top img{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-left: 80px;
+    margin-right: 20px;
+}
+
+/*cancel button location*/
+.content .top .cancel img{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+/*heart button location*/
+.content .top .heart{
+    right:7%;
+    bottom:80px;
+    position: absolute;
+    line-height: 50px;
+    
+}
+.content .top .heart input{
+    width: 2em;
+    height: 2em;
+}
+/*increase and decrease number location*/
+.content .top .number{
+    position: absolute;
+    bottom: 0px;
+    right: 7%;
+}
+.content .top .number input{
+    width:40px;
+    height:30px;
+    font-size:1em;
+    text-align: center;
+
+}
+.content .top .number button{
+    padding:10px 20px;
+    background-color: yellow;
+    border-radius: 1em;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+/*bottom location*/
+.content .bottom1{
+    display:flex;
+    color:white;
+    width: 80%;
+    margin:auto;
+    align-items: center;
+    justify-content: space-between;
+}
+/*bottom left button location*/
+.content .bottom1 .left{
+    width: 25%;
+    color: aliceblue;
+}
+.content .bottom1 .left label{
+    font-size:1.5em;
+}
+.content .bottom1 .left input{
+    width: 2em;
+    height: 2em;
+    border-radius:1em;
+}
+/*bottom right button and information location*/
+.content .bottom1 .right button{
+    margin-top:1em;
+    padding:10px 20px;
+    background-color: yellow;
+    border-radius:1em;
+    font-size: 1.5em;
+    margin-left: 1%;
+}
+/*when the screen size become smaller in specific number, the picture and the font size would be relocate by using @media*/
+@media (max-width:1200px) {
+    .content{
+        font-size:0.8em;
+    }
+    .content h2,.content p{
+       font-size:1.2em;
+    }
+    .content .top img{
+        width: 150px;
+        height: 150px;
+        margin-left: 70px;
+        margin-right: 15px;
+    }
+    .content .top .heart input{
+        width: 1.8em;
+        height: 1.8em;
+    }
+    
+}
+/*when the size is 856px of width, change again*/
+@media (max-width:856px) {
+    .content{
+        font-size:0.7em;
+    }
+    .content h2,.content p{
+       font-size:1.2em;
+    }
+    .content .top img{
+        width: 100px;
+        height: 100px;
+        margin-left: 50px;
+        margin-right: 10px;
+    }
+    .content .top .heart input{
+        width: 1.5em;
+        height: 1.5em;
+    }
+    .content .top .cancel{
+        width:2em;
+    }
+    
+}
+/*when the size is 765px of width, change again*/
+@media (max-width:765px) {
+    .content{
+        font-size:0.6em;
+    }
+    .content h2,.content p{
+       font-size:1.2em;
+    }
+    .content .top img{
+        width: 80px;
+        height: 80px;
+        margin-left: 30px;
+        margin-right: 6px;
+    }
+    .content .top .heart input{
+        width: 1.3em;
+        height: 1.3em;
+    }
+    .content .top .cancel{
+        width:1.8em;
+    }
+    .content .bottom1 .left label{
+        font-size:1em;
+    }
+    
+}
+
+
+
+ 

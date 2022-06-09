@@ -1,0 +1,357 @@
+.container .content{
+    width: 100%;
+    padding-top: 50px;
+    overflow: hidden;
+   
+}
+.container .content .one{
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+/*the left part layout*/
+.container .content .one .left{
+    width: 46%;
+    float: left;
+
+} 
+/*the left picture of product layout*/
+.container .content .one .left .product{
+    width: 85%;
+    text-align: center;
+}
+.container .content .one .left .product img{
+    width:100%;
+}
+/*the left picture of different position picture layout*/
+.container .content .one .left .reference{
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+   
+}
+.container .content .one .left .reference li{
+    margin:0px 10px;
+    float: left;
+}
+.container .content .one .left .reference li img{
+    width:120px;
+    height:90px;
+}
+
+/*the right detail color parts layout*/
+.container .content .one .right{
+    width: 52%;
+    float: right;
+;
+    color: aliceblue;
+}
+.container .content .one .right .right1{
+    text-align: right;
+    width: 80%;
+}
+.container .content .one .right .right1 a{
+    color:white;
+}
+.container .content .one .right .right1 a:hover{
+    color:blue;
+}
+h1.name{
+    line-height: 50px;
+    text-align: center;
+    color: aliceblue;
+}
+.container .content .one .right .star{
+    width: 250px;
+    margin: auto;
+}
+.container .content .one .right .star img{
+    width: 100%;
+}
+.container .content .one .right .exchange{
+   font-size: 0.8em;
+   text-align: right;
+
+}
+/*the right color layout*/
+.container .content .one .right .color span{
+    border-radius: 50%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+/*the right number of product button layout*/
+.container .content .one .right .button{
+    width: 90%;
+    line-height: 50px;
+    height: 100px;
+    margin: auto;
+}
+.container .content .one .right .button input{
+    width:50px;
+    height: 50px;
+    font-size: 2em;
+    background-color: aliceblue;
+    border: 0;
+    margin-left: 5px;
+    text-align: center;
+}
+.container .content .one .right .button input:nth-child(2){
+    width: 100px;
+}
+/*the right cart button layout*/
+.container .content .one .right .button button{
+    width: 300px;
+    height: 100px;
+    background:#08EC63 url(../picture/shopping\ carts.png) no-repeat 20px; 
+    background-size:20% 40%;
+    border-radius: 50px;
+    margin-left: 100px;
+    font-size: 2em;
+    color: aliceblue;
+    padding-left: 50px;
+    border: 0;   
+
+}
+.container .content .one .right .detail{
+    font-size: 0.8em;
+    line-height: 30px;
+    width: 50%;
+    margin: auto;
+    padding-top: 20px;
+
+}
+/* the recommendation layout */
+.container .content .two{
+    clear: both;
+    width: 98%;
+    color: aliceblue;
+    margin:auto;
+}
+/*Id selector, change the detail*/
+#div1 {
+    width:100%;
+	padding-top:20px;
+	background:black;
+	position:relative; 
+	overflow:hidden; 
+	border-radius: 8px;
+	color:white;
+}
+#div1 ul li{
+	width:30%; 
+	height:200px;
+	list-style:none; 
+	float:left; 
+	margin:0 5px;
+	
+}
+#div1 ul li img{
+	width:85%; 
+    border:0;
+}
+#div1 ul li p{
+	padding-top:5px;
+	text-align:center;
+}
+ /*when the screen size become smaller in specific number, the picture and the font size would be relocate by using @media*/
+@media (max-width:1345px) {
+     .container .content .one .right .button input{
+        width:50px;
+        height: 40px;
+        font-size: 1.5em;
+     }
+    
+    .container .content .one .right .button input:nth-child(2){
+        width: 80px;
+    }
+    .container .content .one .right .button button{
+        width: 200px;
+        height: 80px;
+        background-size:20% 40%;
+        border-radius: 50px;
+        margin-left: 100px;
+        font-size: 1em;
+        padding-left: 30px;
+     }
+     .container .content .one .right .color span{
+        width: 40px;
+        height: 40px;
+    }
+    .container .content .one .left .reference li img{
+        width:90px;
+        height:70px;
+    }
+    .container .content .one .right .detail{
+        font-size: 0.7em;
+    }
+    .container .content .one .right .star img{
+        width: 80%;
+    }
+}
+/*when the size is 1161px of width, change detail size*/
+
+@media (max-width:1161px) {
+    .container .content .one .right .right1 h2{
+        font-size: 0.8em;
+    }
+    .container .content .one .right .button input{
+       width:40px;
+       height: 30px;
+       font-size: 1.5em;
+    }
+   
+   .container .content .one .right .button input:nth-child(2){
+       width: 60px;
+   }
+   .container .content .one .right .button button{
+       width: 150px;
+       height: 60px;
+       background-size:20% 40%;
+       border-radius: 50px;
+       margin-left: 80px;
+       font-size: 0.8em;
+       padding-left: 40px;
+    }
+    .container .content .one .right .color span{
+        width: 30px;
+        height: 30px;
+    }
+    .container .content .one .left .reference li img{
+        width:70px;
+        height:50px;
+    }
+    .container .content .one .right .detail{
+        font-size: 0.6em;
+        width: 60%;
+        padding-top: 15px;
+    }
+    .container .content .one .right .star img{
+        width: 70%;
+    }
+}
+/*when the size is 850px of width, change detail size*/
+@media (max-width:850px) {
+    .container .content .one .right .button input{
+       width:30px;
+       height: 30px;
+       font-size: 1em;
+    }
+    .container .content .one .right .right1 h2{
+        font-size: 0.7em;
+    }
+   
+   .container .content .one .right .button input:nth-child(2){
+       width: 40px;
+   }
+   .container .content .one .right .button button{
+       width: 100px;
+       height: 40px;
+       background-size:20% 30%;
+       border-radius: 50px;
+       margin-left: 70px;
+       font-size: 0.15em;
+       background-position: 5px;  
+       padding-left: 20px;
+    }
+    .container .content .one .right .color span{
+        width: 20px;
+        height: 20px;
+    }
+    .container .content .one .left .reference li img{
+        width:60px;
+        height:40px;
+    }
+    .container .content .one .right .detail{
+        font-size: 0.5em;
+        width: 75%;
+        padding-top: 10px;
+    }
+    .container .content .one .right .star img{
+        width: 60%;
+    }
+}
+/*when the size is 696px of width, change detail size*/
+@media (max-width:696px) {
+    .container .content .one .right .button input{
+       width:30px;
+       height: 30px;
+       font-size: 1em;
+    }
+    .container .content .one .right .right1 h2{
+        font-size: 0.5em;
+    }
+   .container .content .one .right .button input:nth-child(2){
+       width: 40px;
+   }
+   .container .content .one .right .button button{
+       width: 100px;
+       height: 40px;
+       background-size:20% 30%;
+       border-radius: 50px;
+       margin-left: 60px;
+       font-size: 0.2em;
+       background-position: 5px;  
+       padding-left: 20px;
+    }
+    .container .content .one .right .color span{
+        width: 20px;
+        height: 20px;
+    }
+    .container .content .one .left .reference li img{
+        width:40px;
+        height:30px;
+    }
+    .container .content .one .right .detail{
+        font-size: 0.4em;
+        padding-top: 8px;
+        width:85%;
+
+    }
+    .container .content .one .right .star img{
+        width: 50%;
+    }
+}
+/*when the size is 657px of width, change detail size*/
+@media (max-width:657px) {
+    .container .content .one .right .button input{
+       width:25px;
+       height: 25px;
+       font-size: 0.8em;
+    }
+   
+   .container .content .one .right .button input:nth-child(2){
+       width: 35px;
+   }
+   .container .content .one .right .button button{
+       width: 80px;
+       height: 35px;
+       background-size:20% 30%;
+       border-radius: 50px;
+       margin-left: 20px;
+       font-size: 0.2em;
+       background-position: 5px;  
+       padding-left: 20px;
+    }
+    .container .content .one .right .color span{
+        width: 15px;
+        height: 15px;
+    }
+    .container .content .one .left .reference li img{
+        width:30px;
+        height:20px;
+    }
+    .container .content .one .right .detail{
+        font-size: 0.3em;
+        padding-top: 5px;
+        width:100%;
+
+    }
+    .container .content .one .right .star img{
+        width: 40%;
+    }
+}
+
+
+

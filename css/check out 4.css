@@ -1,0 +1,177 @@
+.container .content{
+    overflow: hidden;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+/*the left part layout*/
+.container .content .left{
+    width: 70%;
+    float: left;
+    color: white;
+    border-right: 1px solid white;
+}
+.container .content .left .logo{
+    width: 200px;
+    margin: auto;
+}
+
+.container .content .left h2{
+    text-align: center;
+    margin-top: 30px;
+}
+.container .content .left .follow{
+        height:50px;
+        text-align:center;
+        margin: 50px;
+       }
+.container .content .left  .follow hr{
+        display:inline-block;
+        width:80px;
+        vertical-align: center;
+}
+.container .content  .follow span{
+        
+        background:white;
+        color:black;
+        border-radius:50%;
+        padding:6px 15px;
+        font-size:1.5em;
+}
+ /*using flex can make it become horizontal*/
+.container .content .left .top .successed{
+    width:80%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;          
+}
+.container .content .left .top .successed .img{
+    width:20%;
+    height:20%;
+}
+.container .content .left .top .successed img{
+    width: 100%;
+    height: 100%;
+}
+.container .content .left .top .successed p{
+    width:75%;
+    height:2em;
+    font-size:1.5em;
+}
+.container .content .left .top button{
+    margin-top: 50px;
+    padding:0.4em 1.5em;
+    background-color: yellow;
+    border-radius: 1em;
+    font-size:1.5em;
+}
+/*the right product information*/ 
+.container .content .right{
+    float: left;
+    width: 20%;
+    color: aliceblue;
+    margin-left: 50px;
+}
+.container .content .right p{
+    line-height: 80px;
+}
+
+
+.container .content .right p strong{
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+ /*when the screen size become smaller in specific number, the picture and the font size would be relocate by using @media*/
+@media (max-width:1440px) {
+    strong{
+        font-size:1.1em;
+        padding-left: 8px;
+     }
+    .content p{
+        font-size:0.9em;
+    }
+}
+/*when the size is 1300px of width, change detail size*/
+@media (max-width:1300px) {
+    .content p{
+        font-size:0.8em;
+    }
+    strong{
+        padding-left: 6px;
+        font-size:1em;
+    }
+}
+/*when the size is 1200px of width, change detail size*/
+@media (max-width:1200px) {
+    .container .content .left .top button{
+        margin-top: 40px;
+        padding:0.3em 1.2em;
+        font-size:1.2em;
+    }
+    .content .right p{
+        font-size:0.7em;
+    }
+    strong{
+        padding-left: 5px;
+        font-size:0.9em;
+    }
+    .container .content .left .register p{
+        line-height: 40px;
+        font-size: 1em;
+    }
+    .container .content .left .register button{
+        margin-top: 40px;
+        padding:0.3em 1.2em;
+        font-size:1.2em;
+    }
+
+}
+/*when the size is 920px of width, change detail size*/
+@media (max-width:920px) {
+    .container .content .left .top .successed img{
+        width: 80%;
+        height: 80%;
+    }
+    .container .content .left .top .successed p{
+        width:75%;
+        height:1.6em;
+        font-size:1.1em;
+    }
+   .container .content .left .top button{
+       margin-top: 30px;
+       padding:0.2em 1em;
+       font-size:1em;
+   }
+    .content .right p{
+        font-size:0.6em;
+    }
+    strong{
+        padding-left: 4px;
+        font-size:0.8em;
+    }
+    .container .content .left .register p{
+        line-height: 35px;
+        font-size: 0.9em;
+    }
+    .container .content .left .register button{
+        margin-top: 30px;
+        padding:0.25em 1.1em;
+        font-size:1em;
+    }
+}
+/*when the size is 768px of width, change detail size*/
+@media (max-width:768px) {
+   .container .content .left .top button{
+       margin-top: 20px;
+       padding:0.1em 0.6em;
+       font-size:0.9em;
+   }
+    .content .right p{
+        font-size:0.5em;
+    }
+    strong{
+        padding-left: 4px;
+        font-size:0.6em;
+    }
+}
+

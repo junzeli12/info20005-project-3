@@ -1,0 +1,128 @@
+*{
+    margin: 0%;
+    padding:0%;
+}
+body{
+	font:20px 微软雅黑;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+	width:100%;
+	margin:auto;
+	background:black;
+}
+
+
+.container .header .btn{
+	float:right;
+	margin-right:50px;
+	height:140px;
+	line-height:140px;
+	margin-top:30px;
+}
+
+.container .header .btn image{
+	width:50px;
+	height:50px;
+}
+.container .content{
+    overflow: hidden;
+    padding-bottom: 200px;
+    padding-top: 100px;
+}
+.container .content .left{
+    width: 70%;
+    float: left;
+    color: white;
+    border-right: 1px solid white;
+}
+.container .content .left h1{
+    text-align: center;
+    margin-top: 30px;
+}
+.container .content .left .follow{
+   
+        /* width:500px; */
+        height:50px;
+        text-align:center;
+        margin: 50px;
+       }
+.container .content .left  .follow hr{
+        display:inline-block;
+        width:80px;
+        vertical-align: center;
+       }
+.container .content  .follow span{
+        
+        background:white;
+        color:black;
+        border-radius:50%;
+        padding:6px 15px;
+      /*   line-height: 2em; */
+        font-size:1.5em;
+       }
+
+
+
+.container .content .left .logo{
+    width:200px;
+    height:100px;
+    margin:auto;
+}
+.container .content .left .register{
+    width: 60%;
+    margin: auto;
+
+}
+.container .content .left .register p{
+    line-height: 50px;
+    font-size: 1.5em;
+}
+.container .content .left .register p input{
+    height: 30px;
+    display: block;
+    margin-left: 20px;
+    width: 600px;
+}
+#check{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 60px;
+}
+#check~span{
+   font-size: 0.8em; 
+}
+.container .content .left .register button{
+    width: 100px;
+    height: 50px;
+    margin-top: 50px;
+}
+#back{
+    background-color: aliceblue;
+    float: left;
+}
+#next{
+    background-color: yellow;
+    float: right;
+}
+.container .content .right{
+    float: left;
+    width: 20%;
+    color: aliceblue;
+    margin-left: 50px;
+}
+.container .content .right p{
+    line-height: 80px;
+}
+
+
+.container .content .right p strong{
+    padding-left: 50px;
+    font-size: 2em;
+}
