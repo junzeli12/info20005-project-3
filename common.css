@@ -1,0 +1,232 @@
+*{
+    margin: 0%;
+    padding:0%;
+}
+/**/
+body{
+	font:20px 微软雅黑;
+	/* min-width: 768px!important; */
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+
+	width:100%;
+	margin:auto;
+	background:black;
+}
+
+.container .header{
+	width:100%;
+	/* height:150px; */
+	overflow:hidden;
+	position:relative;
+	color:white;
+}
+.header input[type="checkbox"] ,
+.menu{
+    position: absolute;
+    left: 2%;
+    top: 10px;
+    display:none;
+}
+.container .header .logo{
+	width:200px;
+	height:140px;
+}
+.container .header .logo img{
+	width:100%;
+	height:60%;
+	border-radius:2em;
+}
+.container .header .logo,ul{
+	float:left;
+	margin-top:20px;
+	margin-left:10%;
+}
+.header ul li{
+    margin:3em 35px;
+    display:inline-block;
+}
+.header ul li a{
+    font-family: 'Droid Serif', serif;
+    color: #fff;
+    font-size: 1.25em;
+    font-weight:500;
+}
+.container .header .active{
+	color:blue;
+	/* padding-left:50px; */
+}
+.container .header ul li a:hover{
+	color:blue;
+}
+.container .header .btn{
+    clear:both;
+	position:absolute;
+	top:10px;
+	right:5%;
+	margin-top:1%;
+}
+.container .header .btn input{
+	width:150px;
+	height:30px;
+	vertical-align: middle;
+	border-radius:1em;
+}
+.container .header .btn img{
+	width:50px;
+	height:50px;
+	vertical-align: middle;
+}
+.container .footer{
+	padding-top: 20px;
+	color:white;
+	overflow:hidden;
+	background:gray;
+}
+.container .footer .top{
+	width:98%;
+	display:flex;
+}
+
+.container .footer.one,.two,.three,.four,.five{
+    flex:1;
+}
+.container .footer .two{
+	margin-left:2%;
+}
+
+.container .footer .bottom{
+	width:300px;
+	margin:auto;
+}
+.container .footer .bottom img{
+	width:60px;
+	height:60px;
+}
+@media (max-width: 1330px){
+	.container .footer p{
+		font-size:0.6em;
+	}
+}
+@media (max-width: 1200px){
+	.container .header .logo img{
+		width:80%;
+		height:50%;
+	}
+	.header ul li{
+		/* width:100%; */
+		display:inline-block;
+		margin:2em 20px;
+	}
+	.header ul{
+		position:absolute;
+		left:20%;
+		top:10px;
+	}
+	.header ul li .active{
+		padding:0;
+	}
+	.container .header .btn img{
+		width:45px;
+		height:45px;
+	}
+
+}
+@media (max-width: 1072px){
+	.container .header .logo img{
+		width:70%;
+		height:40%;
+	}
+	.container .header .btn img{
+		width:40px;
+		height:40px;
+	}
+	.header ul li{
+		/* width:100%; */
+		display:inline-block;
+		margin:1.5em 10px;
+	}
+	.header ul li .active{
+		padding:0;
+	}
+	/* .footer{
+		display:none;
+	} */
+}
+@media (max-width:900px){
+	.container .header .logo img{
+		width:60%;
+		height:30%;
+	}
+	.container .header .btn img{
+		width:30px;
+		height:30px;
+	}
+	.container .header .btn input{
+		width:100px;
+	}
+	.header ul li{
+		/* width:100%; */
+		display:inline-block;
+		margin:1em 5px;
+	}
+	.header ul li .active{
+		padding:0;
+	}
+	.header ul li a{
+		font-size: 1em;
+	}
+	.container .footer .top .one img{
+		width:100px;
+		height:50px;
+	}
+
+}
+@media (max-width: 760px){
+	.container .header .logo img{
+		width:50%;
+		height:35%;
+	}
+	.container .header .btn img{
+		width:35px;
+		height:35px;
+	}
+	.container .header .btn input{
+		width:80px;
+	}
+	.header ul{
+		display:none;
+	}
+    .menu {
+        display: block;
+		position:absolute;
+		top:10px;
+		left:0;
+        cursor: pointer;
+    }
+    .menu img{
+        width:100%;
+    }
+    .header input[type="checkbox"]:checked ~ ul {
+		position:absolute;
+		left:40%;
+		top:10px;
+        display: block;
+    }
+	.header ul li{
+		width:100%;
+		display:inline-block;
+		margin:2px 0;
+	}
+	.header ul li .active{
+		padding:0;
+	}
+   
+  
+}
