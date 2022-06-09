@@ -144,7 +144,6 @@
 		font-size:0.9em;
 	}
 }
-/*when the size is 1200 of width, change again*/
 @media (max-width:1200px) {
 	.content .list .zuo ul input{
 		width:30px;
@@ -172,7 +171,6 @@
 		height:80%;
 	}
 }
-/*when the size is 930 of width, change again*/
 @media (max-width:930px) {
 	.content .one .right h1{
 		font-size: 1.5em;
@@ -196,7 +194,6 @@
 	}
 	
 }
-/*when the size is 840px of width, change again*/
 @media (max-width:840px) {
 	.content .one .right h1{
 		font-size: 1.3em;
